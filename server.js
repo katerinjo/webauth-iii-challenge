@@ -1,11 +1,11 @@
 const express = require('express');
 const server = express();
 
-const fooRouter = require('./routers/fooRouter');
+const userRouter = require('./routers/userRouter');
 
 server.use(express.json());
 
-server.use('/foos', fooRouter);
+server.use('/users', userRouter);
 
 server.get('/', (req, res) => {
   res.status(200).json({ hello: "world", recieved: req.body });

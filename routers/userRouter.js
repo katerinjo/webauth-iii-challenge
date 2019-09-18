@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-const foos = require('../data/fooData');
+const users = require('../data/userData');
 const db = require('../data/dbConfig');
 const restricted = require('../middleware/restricted');
 const session = require('express-session');
